@@ -12,7 +12,7 @@ with open('setting.json', 'r', encoding= 'utf8') as jfile:
 bot = commands.Bot(command_prefix= jdata['Prefix'], owner_ids= jdata['Owner_id'])
 @bot.event
 async def on_ready():
-    print("Bot is online✅ you can use the bot now!")
+    print("Bot is online✅!")
 
 @bot.event
 async def on_member_join(member):
